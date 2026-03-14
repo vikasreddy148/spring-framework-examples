@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean class="com.app.bean.Student" id="s1" lazy-init="true" scope="">
+    			<!--Setter Injection-->
+    		<property name="sid" value='10'/>
+    		<property name="sname" value='sachin'/>
+    		<property name="saddress" value='IND'/>
+    </bean>
+    
+    <bean class="com.app.bean.Student" id="s2" lazy-init="true" scope="singleton">
+    			<!--Setter Injection-->
+    		<property name="sid" value='18'/>
+    		<property name="sname" value='Virat'/>
+    		<property name="saddress" value='IND'/>
+    </bean>
+
+</beans>
